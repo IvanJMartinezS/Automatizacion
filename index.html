@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>SmartCool</title>
+	<script type="text/javascript" loading="Lazy" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" href="estilo.css">
+	<style type="text/css">h1.temperaturas {text-align: center}</style>
+</head>
+
+<body style="background-color:#3b83bd;">
+	
+	<h1 class="temperaturas"> <font face="Comic Sans MS,arial,verdana">Temperaturas</font></h1>
+	
+	<table class="columns" style="background-color:#0000ff;">
+		<tr>
+			<td><div style="background-color:#00008B" class="gauge" id="chart_Temp1" style="border: 1px solid #ccc"></div></td>
+			<td><div style="background-color:#00008B" class="gauge" id="chart_Temp2" style="border: 1px solid #ccc"></div></td>
+			<td><div style="background-color:#00008B" class="gauge" id="chart_Temp3" style="border: 1px solid #ccc"></div></td>
+			<td><div style="background-color:#00008B" class="gauge" id="chart_Temp4" style="border: 1px solid #ccc"></div></td>
+		</tr>
+	</table>
+
+	<h1 class="temperaturas"> <font face="Comic Sans MS,arial,verdana">Graficas</font></h1>
+	<div style="background-color:#00008B; width: 1300px; height: 400px; color:#000000 ;" class="gauge" id="chartTime"></div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+
+
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+	<script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCjLwHgSsOZX1lz1jBir3OSKN5pY0akeUs",
+        authDomain: "smartcool-5cc31.firebaseapp.com",
+        projectId: "smartcool-5cc31",
+        storageBucket: "smartcool-5cc31.appspot.com",
+        messagingSenderId: "464765976937",
+        appId: "1:464765976937:web:bd293f2e760dddf3fcfdf8"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
